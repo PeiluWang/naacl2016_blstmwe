@@ -1,0 +1,105 @@
+Started in hybrid online/batch training mode.
+Data fractions (40 sequences each) will be shuffled during training.
+Sequences will be shuffled within and across data fractions during training.
+The trained network will be written to 'exp\blstmtag.i.t1\model\network_train.jsn'.
+WARNING: The output file 'exp\blstmtag.i.t1\model\network_train.jsn' already exists. It will be overwritten!
+Validation error will be calculated every 1 epochs.
+Test error will be calculated every 1 epochs.
+Training will be stopped after 1000 epochs or if there is no new lowest validation error within 10 epochs.
+Utilizing the GPU for computations with 40 sequences in parallel.
+Uniform distribution with range [-0.1, 0.1]. Random seed: 2606519707 Random seed shuffle: 1865970449
+
+Reading network from 'resource\network.i100b200o45.jsn'... done.
+
+Loading training set 'exp\blstmtag.i.t1\traindata\train.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        38219
+Sequence lengths: 1..249
+Total timesteps:  912344
+
+Loading validation set 'exp\blstmtag.i.t1\valdata\val.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        5527
+Sequence lengths: 1..91
+Total timesteps:  131768
+
+Loading test set 'exp\blstmtag.i.t1\testdata\test.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        5462
+Sequence lengths: 1..118
+Total timesteps:  129654
+
+Creating the neural network... 
+init weweights randomly
+
+
+init featweights randomly
+
+done.
+Layers:
+(0) input [size: 100]
+(1) blstm [size: 200, bias: 0.0, weights: 161400]
+(2) softmax [size: 45, bias: 0.0, weights: 9045]
+(3) multiclass_classification [size: 45]
+Total weights: 170445
+
+
+input feat dim: 3
+input we dim: 100
+
+vocab size: 37968
+
+Creating the optimizer... done.
+Optimizer type: Steepest descent with momentum
+Max training epochs:       1000
+Max epochs until new best: 10
+Validation error every:    1
+Test error every:          1
+Learning rate:             0.003
+Momentum:                  0
+
+Starting training...
+
+ Epoch | Duration |  Training error  | Validation error |    Test error    | New best 
+-------+----------+------------------+------------------+------------------+----------
+     1 |     49.8 | 23.09%    19.692 |  7.99%     0.080 |  7.71%     6.299 |  yes   
+     2 |     49.9 |  7.07%     5.873 |  5.29%     0.053 |  5.13%     3.985 |  yes   
+     3 |     50.0 |  3.92%     2.989 |  4.04%     0.040 |  4.01%     2.923 |  yes   
+     4 |     49.9 |  3.49%     2.711 |  3.85%     0.039 |  3.56%     2.683 |  yes   
+     5 |     49.9 |  2.63%     1.929 |  3.70%     0.037 |  3.52%     2.613 |  yes   
+     6 |     49.9 |  2.38%     1.698 |  3.58%     0.036 |  3.45%     2.530 |  yes   
+     7 |     49.9 |  2.18%     1.529 |  3.76%     0.038 |  3.51%     2.648 |  no    
+     8 |     49.9 |  2.53%     1.901 |  3.62%     0.036 |  3.51%     2.579 |  no    
+     9 |     49.9 |  2.01%     1.384 |  3.80%     0.038 |  3.73%     2.718 |  no    
+    10 |     49.8 |  1.87%     1.264 |  3.49%     0.035 |  3.39%     2.528 |  yes   
+    11 |     49.9 |  1.76%     1.186 |  3.51%     0.035 |  3.36%     2.555 |  no    
+    12 |     49.8 |  1.67%     1.123 |  3.62%     0.036 |  3.33%     2.612 |  no    
+    13 |     49.9 |  1.59%     1.071 |  3.62%     0.036 |  3.36%     2.665 |  no    
+    14 |     49.9 |  1.50%     0.999 |  3.78%     0.038 |  3.49%     2.862 |  no    
+    15 |     49.9 |  1.43%     0.948 |  3.61%     0.036 |  3.45%     2.808 |  no    
+    16 |     49.9 |  1.37%     0.905 |  3.71%     0.037 |  3.47%     2.851 |  no    
+    17 |     50.7 |  1.29%     0.852 |  3.72%     0.037 |  3.51%     2.988 |  no    
+    18 |     51.0 |  1.21%     0.801 |  3.72%     0.037 |  3.59%     3.019 |  no    
+    19 |     51.1 |  1.14%     0.759 |  3.71%     0.037 |  3.54%     3.057 |  no    
+    20 |     50.9 |  1.08%     0.718 |  3.79%     0.038 |  3.54%     3.128 |  no    
+
+No new lowest error since 10 epochs. Training stopped.
+Lowest validation error: 0.034925
+
+Storing the trained network in 'exp\blstmtag.i.t1\model\network_train.jsn'... done.
+

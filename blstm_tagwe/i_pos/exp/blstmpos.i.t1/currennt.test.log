@@ -1,0 +1,171 @@
+Started in feed forward mode.
+The feed forward output will be written to 'exp\blstmtag.i.t1\result\test.logp'.
+WARNING: The output file 'exp\blstmtag.i.t1\result\test.logp' already exists. It will be overwritten!
+Utilizing the GPU for computations with 40 sequences in parallel.
+
+Reading network from 'exp\blstmtag.i.t1\model\network_train.jsn'... done.
+
+Loading feed forward input set 'exp\blstmtag.i.t1\testdata\test.nc'... 
+Classification task
+
+done.
+Loaded fraction:  100%
+Sequences:        5462
+Sequence lengths: 1..118
+Total timesteps:  129654
+
+Creating the neural network... load complete. word num:37968 total value:3796800
+
+load featweights: exp\blstmtag.i.t1\model\network_train.jsn.featweights
+load complete. weights size:300
+done.
+Layers:
+(0) input [size: 100]
+(1) blstm [size: 200, bias: 0.0, weights: 161400]
+(2) softmax [size: 45, bias: 0.0, weights: 9045]
+(3) multiclass_classification [size: 45]
+Total weights: 170445
+
+
+input feat dim: 3
+input we dim: 100
+
+vocab size: 37968
+
+Computing outputs for data fraction 1... done.
+Computing outputs for data fraction 2... done.
+Computing outputs for data fraction 3... done.
+Computing outputs for data fraction 4... done.
+Computing outputs for data fraction 5... done.
+Computing outputs for data fraction 6... done.
+Computing outputs for data fraction 7... done.
+Computing outputs for data fraction 8... done.
+Computing outputs for data fraction 9... done.
+Computing outputs for data fraction 10... done.
+Computing outputs for data fraction 11... done.
+Computing outputs for data fraction 12... done.
+Computing outputs for data fraction 13... done.
+Computing outputs for data fraction 14... done.
+Computing outputs for data fraction 15... done.
+Computing outputs for data fraction 16... done.
+Computing outputs for data fraction 17... done.
+Computing outputs for data fraction 18... done.
+Computing outputs for data fraction 19... done.
+Computing outputs for data fraction 20... done.
+Computing outputs for data fraction 21... done.
+Computing outputs for data fraction 22... done.
+Computing outputs for data fraction 23... done.
+Computing outputs for data fraction 24... done.
+Computing outputs for data fraction 25... done.
+Computing outputs for data fraction 26... done.
+Computing outputs for data fraction 27... done.
+Computing outputs for data fraction 28... done.
+Computing outputs for data fraction 29... done.
+Computing outputs for data fraction 30... done.
+Computing outputs for data fraction 31... done.
+Computing outputs for data fraction 32... done.
+Computing outputs for data fraction 33... done.
+Computing outputs for data fraction 34... done.
+Computing outputs for data fraction 35... done.
+Computing outputs for data fraction 36... done.
+Computing outputs for data fraction 37... done.
+Computing outputs for data fraction 38... done.
+Computing outputs for data fraction 39... done.
+Computing outputs for data fraction 40... done.
+Computing outputs for data fraction 41... done.
+Computing outputs for data fraction 42... done.
+Computing outputs for data fraction 43... done.
+Computing outputs for data fraction 44... done.
+Computing outputs for data fraction 45... done.
+Computing outputs for data fraction 46... done.
+Computing outputs for data fraction 47... done.
+Computing outputs for data fraction 48... done.
+Computing outputs for data fraction 49... done.
+Computing outputs for data fraction 50... done.
+Computing outputs for data fraction 51... done.
+Computing outputs for data fraction 52... done.
+Computing outputs for data fraction 53... done.
+Computing outputs for data fraction 54... done.
+Computing outputs for data fraction 55... done.
+Computing outputs for data fraction 56... done.
+Computing outputs for data fraction 57... done.
+Computing outputs for data fraction 58... done.
+Computing outputs for data fraction 59... done.
+Computing outputs for data fraction 60... done.
+Computing outputs for data fraction 61... done.
+Computing outputs for data fraction 62... done.
+Computing outputs for data fraction 63... done.
+Computing outputs for data fraction 64... done.
+Computing outputs for data fraction 65... done.
+Computing outputs for data fraction 66... done.
+Computing outputs for data fraction 67... done.
+Computing outputs for data fraction 68... done.
+Computing outputs for data fraction 69... done.
+Computing outputs for data fraction 70... done.
+Computing outputs for data fraction 71... done.
+Computing outputs for data fraction 72... done.
+Computing outputs for data fraction 73... done.
+Computing outputs for data fraction 74... done.
+Computing outputs for data fraction 75... done.
+Computing outputs for data fraction 76... done.
+Computing outputs for data fraction 77... done.
+Computing outputs for data fraction 78... done.
+Computing outputs for data fraction 79... done.
+Computing outputs for data fraction 80... done.
+Computing outputs for data fraction 81... done.
+Computing outputs for data fraction 82... done.
+Computing outputs for data fraction 83... done.
+Computing outputs for data fraction 84... done.
+Computing outputs for data fraction 85... done.
+Computing outputs for data fraction 86... done.
+Computing outputs for data fraction 87... done.
+Computing outputs for data fraction 88... done.
+Computing outputs for data fraction 89... done.
+Computing outputs for data fraction 90... done.
+Computing outputs for data fraction 91... done.
+Computing outputs for data fraction 92... done.
+Computing outputs for data fraction 93... done.
+Computing outputs for data fraction 94... done.
+Computing outputs for data fraction 95... done.
+Computing outputs for data fraction 96... done.
+Computing outputs for data fraction 97... done.
+Computing outputs for data fraction 98... done.
+Computing outputs for data fraction 99... done.
+Computing outputs for data fraction 100... done.
+Computing outputs for data fraction 101... done.
+Computing outputs for data fraction 102... done.
+Computing outputs for data fraction 103... done.
+Computing outputs for data fraction 104... done.
+Computing outputs for data fraction 105... done.
+Computing outputs for data fraction 106... done.
+Computing outputs for data fraction 107... done.
+Computing outputs for data fraction 108... done.
+Computing outputs for data fraction 109... done.
+Computing outputs for data fraction 110... done.
+Computing outputs for data fraction 111... done.
+Computing outputs for data fraction 112... done.
+Computing outputs for data fraction 113... done.
+Computing outputs for data fraction 114... done.
+Computing outputs for data fraction 115... done.
+Computing outputs for data fraction 116... done.
+Computing outputs for data fraction 117... done.
+Computing outputs for data fraction 118... done.
+Computing outputs for data fraction 119... done.
+Computing outputs for data fraction 120... done.
+Computing outputs for data fraction 121... done.
+Computing outputs for data fraction 122... done.
+Computing outputs for data fraction 123... done.
+Computing outputs for data fraction 124... done.
+Computing outputs for data fraction 125... done.
+Computing outputs for data fraction 126... done.
+Computing outputs for data fraction 127... done.
+Computing outputs for data fraction 128... done.
+Computing outputs for data fraction 129... done.
+Computing outputs for data fraction 130... done.
+Computing outputs for data fraction 131... done.
+Computing outputs for data fraction 132... done.
+Computing outputs for data fraction 133... done.
+Computing outputs for data fraction 134... done.
+Computing outputs for data fraction 135... done.
+Computing outputs for data fraction 136... done.
+Computing outputs for data fraction 137... done.

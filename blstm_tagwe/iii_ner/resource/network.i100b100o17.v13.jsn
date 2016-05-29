@@ -1,0 +1,21 @@
+{
+    "layers": [
+        {
+            "name": "input_layer",
+            "type": "input",
+            "size": 100
+        },
+        {
+            "name": "hidden_layer",
+            "type": "blstm",
+            "size": 100,
+            "bias":0
+        },
+        {
+            "name": "output_layer",
+            "type": "sll",
+            "size": 17,
+            "bias": 0
+        }
+    ]
+}

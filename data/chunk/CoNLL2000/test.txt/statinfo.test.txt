@@ -1,0 +1,6 @@
+sen num: 2012
+token num: 47377
+wordset num: 8118
+lowerwordset num: 7495
+posset num: 43
+tagset num: 19

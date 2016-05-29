@@ -1,0 +1,15 @@
+epoch dur || epoches || accuracy || f1 ||
+7 || 17 || 93.15 || 91.81 ||
+
+processed 47377 tokens with 23852 phrases; found: 23826 phrases; correct: 21887.
+accuracy:  50.12%; precision:  91.86%; recall:  91.76%; FB1:  91.81
+ADJP: precision:  68.53%; recall:  61.64%; FB1:  64.90  394
+ADVP: precision:  77.20%; recall:  80.14%; FB1:  78.64  899
+CONJP: precision: 100.00%; recall:  33.33%; FB1:  50.00  3
+INTJ: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+LST: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+NP: precision:  92.42%; recall:  92.35%; FB1:  92.39  12413
+PP: precision:  96.79%; recall:  97.65%; FB1:  97.22  4854
+PRT: precision:  69.00%; recall:  65.09%; FB1:  66.99  100
+SBAR: precision:  87.67%; recall:  86.36%; FB1:  87.01  527
+VP: precision:  91.01%; recall:  90.58%; FB1:  90.79  4636

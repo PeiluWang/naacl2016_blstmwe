@@ -1,0 +1,7 @@
+total_num: 129654
+correct_num: 126101
+accuracy: 0.972596
+error rate: 0.027404
+sen_num: 5462
+sen_correct: 2996
+sen correct rate: 0.548517

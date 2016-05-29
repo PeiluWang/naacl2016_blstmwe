@@ -1,0 +1,6 @@
+@/SYM
+Money/NNP Market/NNP Deposits/NNS -/: a/SYM 6.23/CD %/NN
+a/SYM -/: Average/JJ rate/NN paid/VBN */-NONE- yesterday/NN by/IN 100/CD large/JJ banks/NNS and/CC thrifts/NNS in/IN the/DT 10/CD largest/JJS metropolitan/JJ areas/NNS as/IN */-NONE- compiled/VBN *-1/-NONE- by/IN Bank/NNP Rate/NNP Monitor/NNP ./.
+b/SYM -/: Current/JJ annual/JJ yield/NN ./.
+Guaranteed/VBN minimum/NN 6/CD %/NN ./.
+

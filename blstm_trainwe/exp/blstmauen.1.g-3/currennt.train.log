@@ -1,0 +1,176 @@
+Started in hybrid online/batch training mode.
+Data fractions (40 sequences each) will be shuffled during training.
+Sequences will be shuffled within and across data fractions during training.
+The trained network will be written to 'exp\blstmauen.1.g-3\model\network_train.jsn'.
+Validation error will be calculated every 1 epochs.
+Test error will be calculated every 1 epochs.
+Training will be stopped after 1000 epochs or if there is no new lowest validation error within 3 epochs.
+Utilizing the GPU for computations with 40 sequences in parallel.
+Uniform distribution with range [-0.1, 0.1]. Random seed: 560067020 Random seed shuffle: 1865970449
+
+Reading network from 'resource\network.i50b100o2.jsn'... done.
+
+Loading training set 'exp\blstmauen.1.g-3\traindata\train.nc.1147900'... 
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+load file: exp\blstmauen.1.g-3\traindata\train.nc.1147900
+
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        22957408
+Sequence lengths: 1..100
+Total timesteps:  536452353
+
+Loading validation set 'exp\blstmauen.1.g-3\valdata\val.nc'... 
+
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        1272
+Sequence lengths: 1..80
+Total timesteps:  32565
+
+Loading test set 'exp\blstmauen.1.g-3\testdata\test.nc'... 
+
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        3453
+Sequence lengths: 1..124
+Total timesteps:  46435
+
+Creating the neural network... 
+load weweights: data\weweights\weweights.ldcallf-cwf_130k_50dim.cwf_130k_50dim
+load complete. word num:113459 total value:5672950
+
+init featweights randomly
+
+done.
+Layers:
+(0) input [size: 50]
+(1) blstm [size: 100, bias: 0.0, weights: 40700]
+(2) softmax [size: 2, bias: 0.0, weights: 202]
+(3) multiclass_classification [size: 2]
+Total weights: 40902
+
+
+input feat dim: 1
+input we dim: 50
+
+vocab size: 113459
+
+Creating the optimizer... done.
+Optimizer type: Steepest descent with momentum
+Max training epochs:       1000
+Max epochs until new best: 3
+Validation error every:    1
+Test error every:          1
+Learning rate:             0.005
+Momentum:                  0
+
+Starting training...
+
+ Epoch | Duration |  Training error  | Validation error |    Test error    | New best 
+-------+----------+------------------+------------------+------------------+----------
+     1 |  15424.0 |  2.98%     1.864 |  2.64%     0.026 |  5.81%     2.212 |  yes   
+     2 |  15663.9 |  2.62%     1.656 |  2.48%     0.025 |  5.64%     2.139 |  yes   
+     3 |  15716.2 |  2.51%     1.588 |  2.44%     0.024 |  5.41%     2.057 |  yes   
+     4 |  15761.0 |  2.44%     1.546 |  2.37%     0.024 |  5.75%     2.323 |  yes   
+     5 |  15750.8 |  2.39%     1.515 |  2.42%     0.024 |  5.41%     2.113 |  no    
+     6 |  15757.0 |  2.35%     1.492 |  2.35%     0.023 |  5.54%     2.200 |  yes   
+     7 |  15686.7 |  2.31%     1.472 |  2.31%     0.023 |  5.31%     2.125 |  yes   
+     8 |  15656.0 |  2.28%     1.456 |  2.27%     0.023 |  5.39%     2.173 |  yes   
+     9 |  15644.9 |  2.26%     1.442 |  2.23%     0.022 |  5.64%     2.283 |  yes   
+    10 |  15656.0 |  2.24%     1.430 |  2.26%     0.023 |  5.76%     2.271 |  no    
+    11 |  15664.1 |  2.22%     1.419 |  2.26%     0.023 |  5.61%     2.230 |  no    
+    12 |  15670.6 |  2.21%     1.409 |  2.28%     0.023 |  5.83%     2.362 |  no    
+
+No new lowest error since 3 epochs. Training stopped.
+Lowest validation error: 0.022263
+
+Storing the trained network in 'exp\blstmauen.1.g-3\model\network_train.jsn'... done.
+

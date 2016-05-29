@@ -1,0 +1,32 @@
+{
+    "layers": [
+        {
+            "name": "input_layer",
+            "type": "input",
+            "size": 100
+        },
+        {
+            "name": "hidden_layer",
+            "type": "blstm",
+            "size": 100,
+            "bias":0
+        },
+        {
+            "name": "hidden_layer2",
+            "type": "blstm",
+            "size": 100,
+            "bias":0
+        },
+        {
+            "name": "output_layer",
+            "type": "softmax",
+            "size": 45,
+            "bias": 0
+        },
+        {
+            "name": "postoutput",
+            "type": "multiclass_classification",
+            "size": 45
+        }
+    ]
+}

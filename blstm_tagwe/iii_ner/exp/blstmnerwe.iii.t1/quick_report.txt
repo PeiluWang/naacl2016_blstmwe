@@ -1,0 +1,9 @@
+epoch dur || epoches || accuracy || f1 ||
+12 || 15 || 97.50 || 89.64 ||
+
+processed 46435 tokens with 5648 phrases; found: 5644 phrases; correct: 5061.
+accuracy:  97.82%; precision:  89.67%; recall:  89.61%; FB1:  89.64
+LOC: precision:  91.75%; recall:  92.69%; FB1:  92.22  1685
+MISC: precision:  78.02%; recall:  77.35%; FB1:  77.68  696
+ORG: precision:  86.58%; recall:  87.00%; FB1:  86.79  1669
+PER: precision:  95.80%; recall:  94.43%; FB1:  95.11  1594

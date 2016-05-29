@@ -1,0 +1,6 @@
+sen num: 8936
+token num: 211727
+wordset num: 19122
+lowerwordset num: 17258
+posset num: 44
+tagset num: 22

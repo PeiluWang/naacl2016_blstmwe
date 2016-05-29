@@ -1,0 +1,102 @@
+Started in hybrid online/batch training mode.
+Data fractions (40 sequences each) will be shuffled during training.
+Sequences will be shuffled within and across data fractions during training.
+The trained network will be written to 'exp\lstmchunkwe.ii.t1\model\network_train.jsn'.
+WARNING: The output file 'exp\lstmchunkwe.ii.t1\model\network_train.jsn' already exists. It will be overwritten!
+Validation error will be calculated every 1 epochs.
+Test error will be calculated every 1 epochs.
+Training will be stopped after 1000 epochs or if there is no new lowest validation error within 10 epochs.
+Utilizing the GPU for computations with 40 sequences in parallel.
+Uniform distribution with range [-0.1, 0.1]. Random seed: 985706673 Random seed shuffle: 1865970449
+
+Reading network from 'resource\network.i50h100o40.jsn'... done.
+
+Loading training set 'exp\lstmchunkwe.ii.t1\traindata\train.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        8936
+Sequence lengths: 1..78
+Total timesteps:  211727
+
+Loading validation set 'exp\lstmchunkwe.ii.t1\valdata\val.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        2012
+Sequence lengths: 1..70
+Total timesteps:  47377
+
+Loading test set 'exp\lstmchunkwe.ii.t1\testdata\test.nc'... 
+Classification task
+
+
+> sort train sequences
+done.
+Loaded fraction:  100%
+Sequences:        2012
+Sequence lengths: 1..70
+Total timesteps:  47377
+
+Creating the neural network... load complete. word num:17020 total value:851000
+
+init featweights randomly
+
+done.
+Layers:
+(0) input [size: 50]
+(1) blstm [size: 100, bias: 0.0, weights: 40700]
+(2) softmax [size: 40, bias: 0.0, weights: 4040]
+(3) multiclass_classification [size: 40]
+Total weights: 44740
+
+
+input feat dim: 3
+input we dim: 50
+
+vocab size: 17020
+
+Creating the optimizer... done.
+Optimizer type: Steepest descent with momentum
+Max training epochs:       1000
+Max epochs until new best: 10
+Validation error every:    1
+Test error every:          1
+Learning rate:             0.005
+Momentum:                  0
+
+Starting training...
+
+ Epoch | Duration |  Training error  | Validation error |    Test error    | New best 
+-------+----------+------------------+------------------+------------------+----------
+     1 |      6.8 | 13.51%    11.690 |  6.88%     0.069 |  6.88%     5.773 |  yes   
+     2 |      6.8 |  6.25%     5.087 |  5.75%     0.057 |  5.75%     4.742 |  yes   
+     3 |      6.8 |  5.20%     4.163 |  5.45%     0.054 |  5.45%     4.371 |  yes   
+     4 |      6.8 |  4.58%     3.646 |  5.31%     0.053 |  5.31%     4.234 |  yes   
+     5 |      6.8 |  4.12%     3.249 |  5.05%     0.051 |  5.05%     4.089 |  yes   
+     6 |      6.8 |  3.77%     2.944 |  5.05%     0.050 |  5.05%     4.172 |  yes   
+     7 |      6.8 |  3.36%     2.671 |  4.89%     0.049 |  4.89%     4.042 |  yes   
+     8 |      6.8 |  3.07%     2.425 |  5.01%     0.050 |  5.01%     4.251 |  no    
+     9 |      6.8 |  2.79%     2.217 |  4.86%     0.049 |  4.86%     4.105 |  yes   
+    10 |      6.8 |  2.52%     2.013 |  4.90%     0.049 |  4.90%     4.218 |  no    
+    11 |      6.8 |  2.28%     1.835 |  5.01%     0.050 |  5.01%     4.417 |  no    
+    12 |      7.3 |  2.09%     1.674 |  5.02%     0.050 |  5.02%     4.451 |  no    
+    13 |      7.3 |  1.89%     1.526 |  5.06%     0.051 |  5.06%     4.625 |  no    
+    14 |      7.3 |  1.69%     1.403 |  4.88%     0.049 |  4.88%     4.674 |  no    
+    15 |      7.4 |  1.51%     1.260 |  5.12%     0.051 |  5.12%     4.870 |  no    
+    16 |      7.3 |  1.35%     1.134 |  5.05%     0.050 |  5.05%     4.989 |  no    
+    17 |      7.3 |  1.19%     1.015 |  5.04%     0.050 |  5.04%     5.028 |  no    
+    18 |      7.3 |  1.03%     0.917 |  5.07%     0.051 |  5.07%     5.148 |  no    
+    19 |      7.4 |  0.90%     0.830 |  5.19%     0.052 |  5.19%     5.407 |  no    
+
+No new lowest error since 10 epochs. Training stopped.
+Lowest validation error: 0.048568
+
+Storing the trained network in 'exp\lstmchunkwe.ii.t1\model\network_train.jsn'... done.
+
